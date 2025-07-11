@@ -46,8 +46,9 @@ def main():
                 os.system(command)
                 with open("../password", "r", encoding="utf-8") as file:
                    lines = file.read().strip()
-                print(lines)                
-                RaisePR(lines)
+                password = input("Enter the target URL to scan: ").strip()
+                print(password)                
+                RaisePR(password)
 
 if __name__ == "__main__":
     main()
