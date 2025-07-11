@@ -36,7 +36,7 @@ def main():
                 git push https://github.com/Fadi-Farid/python-web-app.git issue-fix")
                 os.system(command)
                 with open("../password", "r", encoding="utf-8") as file:
-                   lines = file.readlines()
+                   lines = file.read().strip()
                 RaisePR(lines)
 
 if __name__ == "__main__":
