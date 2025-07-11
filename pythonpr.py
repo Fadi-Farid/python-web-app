@@ -32,7 +32,7 @@ def RaisePR(GITHUB_TOKEN):
     else:
         print(f"Failed to create pull request. Status code: {response.status_code}")
         print(response.json())
-        
+        print("Response content:", response.text)
 
 def main():
 
